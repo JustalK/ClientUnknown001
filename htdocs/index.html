@@ -123,7 +123,10 @@ URI     : http://themeforest.net/user/surjithctly
         <!-- Home page-->
         <section class="home no-bg">
             <!-- Video Background - Here you need to replace the videoURL with your youtube video URL -->
-            <a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'http://vimeo.com/164196457'}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="Le sherwood - Bar - Paris ">vimeo</a>
+            <div style="background:#FFFFFF;opacity:0.3;">
+            <iframe id="myvideo" src="https://player.vimeo.com/video/164196457?background=1" style="background-image: none; background-position: initial initial; background-repeat: initial initial;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <!-- <a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'https://www.youtube.com/watch?v=YQHsXMglC9A'}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="Le sherwood - Bar - Paris ">vimeo</a>  -->
             <div class="tittle-block">
                 <div class="logo">
                     <a href="./index.html">
@@ -752,6 +755,7 @@ URI     : http://themeforest.net/user/surjithctly
         <script src="js/animation.js"></script>
         <script src="js/vendor/vegas/vegas.min.js"></script>
         <script src="js/vendor/jquery.mb.YTPlayer.js"></script>
+        <script src="js/vendor/jquery.vimeo.api.js"></script>
         <script src="js/vendor/jquery.stellar.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor/mc/jquery.ketchup.all.min.js"></script>

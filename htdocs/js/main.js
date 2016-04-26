@@ -622,4 +622,7 @@ $(function() {
 
     });
 
+    $("#myvideo").css("width",200+$(window).width()+"px");
+    $("#myvideo").css("height",200+$(window).height()+"px");
+    
 }); /* End Strict Function */
