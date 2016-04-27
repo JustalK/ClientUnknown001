@@ -20,7 +20,7 @@ URI     : http://sogofactory.com
     padding: 13px 0;
 }
 .navbar .navbar-brand img{
-    height: 44px;
+    height: 100%;
 }
 
 /* ================================================
