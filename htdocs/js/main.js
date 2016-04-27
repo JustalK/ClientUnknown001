@@ -633,10 +633,9 @@ $(function() {
 	    var $target = $(target);
 
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	        'scrollTop': $target.offset().top - $("#navbar").height() 
 	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	        console.log(target);
+	        //window.location.hash = target;
 	    });
 	});
 }); /* End Strict Function */
