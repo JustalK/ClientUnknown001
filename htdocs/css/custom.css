@@ -1,0 +1,32 @@
+/*
+
+Style   : Le Sherwood Restaurant CSS
+Version : 1.0
+Author  : Sogofactory
+URI     : http://sogofactory.com
+
+
+*/
+
+/* ================================================
+   Global Styles
+   ================================================ */
+
+/* ================================================
+   HEADER
+   ================================================ */
+
+.navbar .navbar-brand{
+    padding: 13px 0;
+}
+.navbar .navbar-brand img{
+    height: 44px;
+}
+
+/* ================================================
+   Section #1 Video + Logo
+   ================================================ */
+
+.logo a img{
+    height: 280px
+}
