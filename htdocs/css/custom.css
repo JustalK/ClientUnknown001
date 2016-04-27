@@ -11,8 +11,22 @@ URI     : http://sogofactory.com
 /* ================================================
    Global Styles
    ================================================ */
+/* TITLE */
 .page-header h3{
   font-size: 32px;
+}
+
+/* BTN */
+.btn-default{
+    background-color: #f7b239;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.btn-default:hover{
+    background-color: #FF9E12;
 }
 
 /* ================================================
@@ -27,8 +41,19 @@ URI     : http://sogofactory.com
    Section #1 Video + Logo
    ================================================ */
 
+#myvideo{
+  opacity: 0.6;
+}
 .logo a img{
     height: 280px
+}
+.home .tittle-block h1{
+    font-size: 26px;
+    margin-bottom: 0;
+}
+.home .tittle-block h2{
+    font-size: 26px;
+    margin-top: 10px;
 }
 
 /* ================================================
@@ -42,3 +67,16 @@ URI     : http://sogofactory.com
     background-size: cover;
     padding-bottom: 80px;
 }
+
+/* ================================================
+   Section - Galerie
+   ================================================ */
+.gallery{
+    background: #1b1e20 url(../img/services.jpg) no-repeat center top;
+    background-size: cover;
+    padding-bottom: 95px;
+}
+.gallery-content{
+    padding: 0;
+}
+
