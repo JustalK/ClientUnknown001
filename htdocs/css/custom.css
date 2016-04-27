@@ -19,10 +19,6 @@ URI     : http://sogofactory.com
    HEADER
    ================================================ */
 
-.navbar .navbar-brand{
-  margin: 10px 0;
-  padding: 0;
-}
 .navbar .navbar-brand img{
     height: 100%;
 }
