@@ -59,7 +59,7 @@ $(window).load(function() {
         $.Velocity.RunSequence(homeInSequence); //home page loads in
     }, 750);
     $(".scroll-down a").on('click', function() {
-        $(".about").velocity("scroll", scroll.o);
+        //$(".about").velocity("scroll", scroll.o);
     });
 
 });
