@@ -622,7 +622,7 @@ $(function() {
 
     });
 
-    $("#myvideo").css("width",200+$(window).width()+"px");
+    $("#myvideo").css("width",250+$(window).width()+"px");
     $("#myvideo").css("height",200+$(window).height()+"px");
     
     
@@ -638,4 +638,65 @@ $(function() {
 	        //window.location.hash = target;
 	    });
 	});
+	
+	var anchor = [];
+	var anchorName = [];
+	$(".anchor").each(function() {
+		anchor.push($(this));
+		anchorName.push($(this).attr("href").slice(1));
+	});
+	console.log(anchorName);
+	var anchorPosition = [];
+	$("section").each(function() {
+		for(var i=0;i<anchorName.length;i++) {
+			if($(this).attr("class").indexOf(anchorName[i]) > -1) {
+				anchorPosition.push(parseInt($(this).offset().top));
+			}
+		}
+	});
+	
+	var positionTopScroll=0;
+	$(window).scroll(function(event) {
+		positionTopScroll = $(window).scrollTop();
+		transition();
+	});
+	
+	var prevPosition = 0;
+	var nextPosition = anchorPosition[0];
+	function transition() {
+		if(positionTopScroll<prevPosition) {
+			for(var i=0;i<anchorName.length;i++) {
+				if(anchorPosition[i]==prevPosition) {
+					if(i>=1) {
+						$(anchor[i-1]).addClass("menu-hover");
+					}
+					$(anchor[i]).removeClass("menu-hover");
+					if(i>=1) {
+						prevPosition = anchorPosition[i-1];
+					} else {
+						prevPosition = 0;
+					}
+					nextPosition = anchorPosition[i];
+					break;
+				}
+			}			
+		}
+		if(positionTopScroll>nextPosition) {
+			for(var i=0;i<anchorName.length;i++) {
+				if(anchorPosition[i]==nextPosition) {
+					if(i>0) {
+						$(anchor[i-1]).removeClass("menu-hover");
+					}
+					$(anchor[i]).addClass("menu-hover");
+					prevPosition = anchorPosition[i];
+					if(i<anchorName.length-1) {
+						nextPosition = anchorPosition[i+1];
+					} else {
+						nextPosition = parseInt($(html).height())+100;
+					}
+					break;
+				}
+			}
+		}		
+	}
 }); /* End Strict Function */
