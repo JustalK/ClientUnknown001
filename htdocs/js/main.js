@@ -657,7 +657,7 @@ $(function() {
 	
 	var positionTopScroll=0;
 	$(window).scroll(function(event) {
-		positionTopScroll = $(window).scrollTop();
+		positionTopScroll = $(window).scrollTop()+$("#navbar").height()+10;
 		transition();
 	});
 	
