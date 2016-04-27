@@ -11,14 +11,14 @@ URI     : http://sogofactory.com
 /* ================================================
    Global Styles
    ================================================ */
+.page-header h3{
+  font-size: 32px;
+}
 
 /* ================================================
    HEADER
    ================================================ */
 
-.navbar .navbar-brand{
-    padding: 13px 0;
-}
 .navbar .navbar-brand img{
     height: 100%;
 }
