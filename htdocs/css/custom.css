@@ -15,6 +15,17 @@ URI     : http://sogofactory.com
 .page-header h3{
   font-size: 32px;
 }
+.page-header:after{
+    content: "";
+    display: block;
+    position: relative;
+    height: 5px;
+    width: 80px;
+    background-color: transparent;
+    border-top: 2px solid #f7b239;
+    border-bottom: 1px solid #f7b239;
+    margin: 0px auto;
+}
 
 /* BTN */
 .btn-default{
