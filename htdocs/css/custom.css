@@ -30,3 +30,15 @@ URI     : http://sogofactory.com
 .logo a img{
     height: 280px
 }
+
+/* ================================================
+   Section - Events
+   ================================================ */
+.special{
+    background: url('../img/Galerie/Le Sherwood - Piano Bar - Paris - Bar 4.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 80px;
+}
