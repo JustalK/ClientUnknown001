@@ -625,4 +625,17 @@ $(function() {
     $("#myvideo").css("width",200+$(window).width()+"px");
     $("#myvideo").css("height",200+$(window).height()+"px");
     
+    
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 }); /* End Strict Function */
