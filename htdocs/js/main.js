@@ -633,9 +633,10 @@ $(function() {
 	    var $target = $(target);
 
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - $("#navbar").height() 
+	        'scrollTop': $target.offset().top - $(".navbar-fixed-top").height()
 	    }, 900, 'swing', function () {
 	        //window.location.hash = target;
+	    	transition();
 	    });
 	});
 	
@@ -657,14 +658,14 @@ $(function() {
 	
 	var positionTopScroll=0;
 	$(window).scroll(function(event) {
-		positionTopScroll = $(window).scrollTop();
+		positionTopScroll = parseInt($(window).scrollTop());
 		transition();
 	});
 	
 	var prevPosition = 0;
 	var nextPosition = anchorPosition[0];
 	function transition() {
-		if(positionTopScroll<=prevPosition) {
+		if(positionTopScroll<prevPosition) {
 			for(var i=0;i<anchorName.length;i++) {
 				if(anchorPosition[i]==prevPosition) {
 					if(i>=1) {
