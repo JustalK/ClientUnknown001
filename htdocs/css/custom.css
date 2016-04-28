@@ -15,6 +15,17 @@ URI     : http://sogofactory.com
 .page-header h3{
   font-size: 32px;
 }
+.page-header:after{
+    content: "";
+    display: block;
+    position: relative;
+    height: 5px;
+    width: 80px;
+    background-color: transparent;
+    border-top: 2px solid #f7b239;
+    border-bottom: 1px solid #f7b239;
+    margin: 0px auto;
+}
 
 /* BTN */
 .btn-default{
@@ -54,6 +65,28 @@ URI     : http://sogofactory.com
 .home .tittle-block h2{
     font-size: 26px;
     margin-top: 10px;
+}
+
+.scroll-down a{
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 39px;
+    height: 62px;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 100px;
+    display: block;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+}
+.scroll-down a:hover{
+  background-color: #fff;
+    color: #333;
 }
 
 /* ================================================
