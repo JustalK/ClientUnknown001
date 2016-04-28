@@ -11,7 +11,9 @@ URI     : http://sogofactory.com
 /* ================================================
    Global Styles
    ================================================ */
+
 /* TITLE */
+
 .page-header h3{
   font-size: 32px;
 }
@@ -38,6 +40,21 @@ URI     : http://sogofactory.com
 }
 .btn-default:hover{
     background-color: #FF9E12;
+}
+
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.menu .food-menu .menu-item .price,
+.menu .food-menu .menu-item3 .price{
+    font-family: "Raleway", sans-serif;
+}
+p{
+    font-size: 17px;
 }
 
 /* ================================================
@@ -95,6 +112,9 @@ URI     : http://sogofactory.com
     -o-background-size: cover;
     background-size: cover;
     padding-bottom: 80px;
+}
+.special-slider .slider-content p{
+    font-size: 17px;
 }
 
 /* ================================================
