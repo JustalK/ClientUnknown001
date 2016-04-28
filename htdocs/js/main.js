@@ -657,14 +657,14 @@ $(function() {
 	
 	var positionTopScroll=0;
 	$(window).scroll(function(event) {
-		positionTopScroll = $(window).scrollTop()+$("#navbar").height()+10;
+		positionTopScroll = $(window).scrollTop();
 		transition();
 	});
 	
 	var prevPosition = 0;
 	var nextPosition = anchorPosition[0];
 	function transition() {
-		if(positionTopScroll<prevPosition) {
+		if(positionTopScroll<=prevPosition) {
 			for(var i=0;i<anchorName.length;i++) {
 				if(anchorPosition[i]==prevPosition) {
 					if(i>=1) {
@@ -681,7 +681,7 @@ $(function() {
 				}
 			}			
 		}
-		if(positionTopScroll>nextPosition) {
+		if(positionTopScroll+$(".navbar-fixed-top").height()>=nextPosition) {
 			for(var i=0;i<anchorName.length;i++) {
 				if(anchorPosition[i]==nextPosition) {
 					if(i>0) {
@@ -689,7 +689,7 @@ $(function() {
 					}
 					$(anchor[i]).addClass("menu-hover");
 					prevPosition = anchorPosition[i];
-					if(i<anchorName.length-1) {
+					if(i<=anchorName.length-1) {
 						nextPosition = anchorPosition[i+1];
 					} else {
 						nextPosition = parseInt($(html).height())+100;
