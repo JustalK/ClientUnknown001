@@ -14,7 +14,7 @@
 
                     // How zoomed in you want the map to start at (always required)
                     zoom: 15,
-
+                    scrollwheel: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(map_lat, map_lon),
 
