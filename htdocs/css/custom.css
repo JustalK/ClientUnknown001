@@ -98,11 +98,6 @@ strong{
 #myvideo{
   opacity: 0.6;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) { /* Correction marge Safari */
-  #myvideo{
-    margin-top: -60px;
-  }
-}
 .logo a img{
     height: 280px
 }
