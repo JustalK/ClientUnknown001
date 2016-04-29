@@ -277,6 +277,72 @@ strong{
 }
 
 /* ================================================
+   Section - Testimony
+   ================================================ */
+.trusted .trusted-quote{
+  background: #f4f4f4;
+}
+.trusted-quote .quote-body{
+  color: #4b4741;
+  margin: 20px 0px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.trusted-quote .quote-author{
+  color: #000;
+  margin: 20px 0px;
+  font-size: 18px;
+}
+.trusted .slick-dots li button:before{
+
+}
+.trusted-slider .slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0px 4px;
+  padding: 0px;
+  cursor: pointer;
+}
+.trusted-slider .slick-dots li.slick-active{
+  background-color: transparent;
+}
+.trusted-slider .slick-dots li.slick-active button{
+background-color: transparent;
+border: solid 2px #f9c56a;
+}
+.trusted-slider .slick-dots li button:before{
+font-size: 0;
+}
+.trusted-slider .slick-dots li.slick-active button:before{
+  opacity: 1;
+  background: #f9c56a;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 999;
+  font-size: 0;
+}
+.trusted-slider .slick-dots li button{
+  font-size: 0px;
+  line-height: 0;
+  display: table;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0px none;
+  outline: medium none;
+  background: #e3e3e3;
+  border-radius: 50%;
+}
+/* ================================================
    Section - Contact
    ================================================ */
 
