@@ -657,16 +657,43 @@ $(function() {
 	$(window).scroll(function(event) {
 		positionTopScroll = parseInt($(window).scrollTop());
 		transition();
+		fixscroll();
+	});
+	
+	function fixscroll() {
+		console.log(positionTopScroll-($(".footer-copyrights").offset().top-$(window).height()));
+		if(positionTopScroll>$(".footer-copyrights").offset().top-$(window).height()) {
+			$(".scroll-up").first().css("display","none");
+			$(".scroll-up-fix").first().css("display","block");
+		} else {
+			if(positionTopScroll>$(".footer-copyrights").offset().top-2*$(window).height()) {
+				$(".scroll-up-fix").first().css("display","none");
+				$(".scroll-up").first().css("display","block");
+			}
+		}
+		$(".scroll-up-fix").first().css("bottom",$(".footer-copyrights").height()+"px");
+	}
+	
+	$(".scroll-up,.scroll-up-fix").on("click",function () {
+	    $('html, body').stop().animate({
+	        'scrollTop': 0
+	    }, 900, 'swing', function () {
+	    	transition();
+	    });
 	});
 	
 	var prevPosition = 0;
 	var nextPosition = anchorPosition[0];
+	$(".scroll-up").first().css("display","none");
 	function transition() {
 		if(positionTopScroll<prevPosition) {
 			for(var i=0;i<anchorName.length;i++) {
 				if(anchorPosition[i]==prevPosition) {
 					if(i>=1) {
 						$(anchor[i-1]).addClass("menu-hover");
+					}
+					if(i<=1) {
+						$(".scroll-up").first().css("display","none");
 					}
 					$(anchor[i]).removeClass("menu-hover");
 					if(i>=1) {
@@ -684,6 +711,9 @@ $(function() {
 				if(anchorPosition[i]==nextPosition) {
 					if(i>0) {
 						$(anchor[i-1]).removeClass("menu-hover");
+					}
+					if(i>=1) {
+						$(".scroll-up").first().css("display","block");
 					}
 					$(anchor[i]).addClass("menu-hover");
 					prevPosition = anchorPosition[i];

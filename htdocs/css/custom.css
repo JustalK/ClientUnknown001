@@ -315,3 +315,47 @@ iframe {
     top: 50%;
     width: 177.77777778vh;
 }
+
+.scroll-down .scroll-up a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.scroll-up {
+	position: fixed;
+	bottom: 0;
+	right: 10%;
+	background-color: rgba(0, 0, 0, 0.298039);
+	width: 120px;
+	height: auto;
+	padding: 15px 10px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px 5px 0px 0px;
+	display: block;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	z-index:10000;
+}
+
+.scroll-up-fix {
+	position: absolute;
+	right: 10%;
+	background-color: rgba(0, 0, 0, 0.298039);
+	width: 120px;
+	height: auto;
+	padding: 15px 10px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px 5px 0px 0px;
+	display: block;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	z-index:10000;
+}
