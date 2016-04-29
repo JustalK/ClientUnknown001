@@ -187,6 +187,16 @@ strong{
 /* ================================================
    Section - La Carte
    ================================================ */
+.menu .food-menu .menu-item h4{
+  font-size: 17px;
+  text-transform: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.menu .food-menu .menu-item p{
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 /* ================================================
    Section - Services
