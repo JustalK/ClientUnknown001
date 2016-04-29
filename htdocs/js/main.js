@@ -100,7 +100,7 @@ $(function() {
             });
         });
     }
-
+    
     //Isotope menu
     if ($('.menu-items2').length) {
         var $grids = $('.menu-items2').isotope({
@@ -200,7 +200,7 @@ $(function() {
             });
         });
     }
-
+    
     /* ================================================
        Slick Slider
        ================================================ */
@@ -697,4 +697,8 @@ $(function() {
 			}
 		}		
 	}
+	
+    $grid.isotope({
+        filter: $(".tagsort-active").first().attr("data-filter")
+    });
 }); /* End Strict Function */
