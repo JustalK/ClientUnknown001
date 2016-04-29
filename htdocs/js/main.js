@@ -621,9 +621,6 @@ $(function() {
             $(".navbar-fixed-top").css("background", "rgba(0, 0, 0, 0.3)");
 
     });
-
-    $("#myvideo").css("width",250+$(window).width()+"px");
-    $("#myvideo").css("height",200+$(window).height()+"px");
     
     
 	$('a[href^="#"]').on('click',function (e) {
