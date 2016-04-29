@@ -12,6 +12,18 @@ URI     : http://sogofactory.com
    Global Styles
    ================================================ */
 
+/* --- LOADER --- */
+.preloder{
+    background: rgba(0, 0, 0, 1);
+}
+.preloder .scoket{
+    position: relative;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
 /* --- TITLE --- */
 
 .page-header h3{
@@ -71,6 +83,10 @@ p{
 /* ================================================
    HEADER
    ================================================ */
+
+.menu-hover {
+  color:#f9c56a !important;
+}
 
 /* ================================================
    Section #1 Video + Logo
@@ -148,8 +164,14 @@ p{
     background-size: cover;
     padding-bottom: 80px;
 }
+.special-slider .slider-content{
+    padding: 30px;
+}
 .special-slider .slider-content p{
     font-size: 17px;
+}
+.special-slider .slider-content .page-header{
+    margin: 0;
 }
 .special-slider .slider-content .page-header h4{
   text-align: left;
@@ -157,6 +179,9 @@ p{
 }
 .special-slider .slider-content .page-header h4 small{
   text-align: left;
+}
+.special-slider .slider-content .page-header:after{
+  display: none;
 }
 
 /* ================================================
@@ -167,6 +192,10 @@ p{
     background-size: cover;
     padding-bottom: 0;
 }
+.gallery .page-header h3{
+    margin-bottom: 30px;
+}
+
 .gallery-content{
     padding: 0 0 88px 0;
 }
@@ -179,11 +208,21 @@ p{
   margin-bottom: 5px;
 }
 
-/* ================================================
-   Script
-   ================================================ */
 
-.menu-hover {
-	color:#f9c56a !important;
+/* ================================================
+   Section - Services
+   ================================================ */
+.services{
+    background: #f4f4f4;
 }
+.service-content h4{
+    color: #4b4741;
+}
+.services-slider .slick-dots li button{
+    background: #e3e3e3;
+}
+
+
+
+
 
