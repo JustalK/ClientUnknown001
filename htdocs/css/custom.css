@@ -11,6 +11,11 @@ URI     : http://sogofactory.com
 /* ================================================
    Global Styles
    ================================================ */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* --- LOADER --- */
 .preloder{
@@ -89,6 +94,24 @@ strong{
 
 .menu-hover {
   color:#f9c56a !important;
+}
+.navbar .navbar-brand{
+  padding: 0px;
+}
+.navbar .navbar-brand img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar .navbar-brand span{
+  color: #ECECEC;
+  text-transform: uppercase;
+  padding: 25px 15px 25px 5px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s ease;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ================================================
@@ -191,6 +214,19 @@ strong{
   font-size: 16px;
   font-style: italic;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* ================================================
+   Section - Video
+   ================================================ */
+.videoSection{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 /* ================================================
@@ -314,4 +350,36 @@ iframe {
     position: absolute;
     top: 50%;
     width: 177.77777778vh;
+}
+
+/* ================================================
+   Footer
+   ================================================ */
+.footer .footer-copyrights p{
+  margin: 30px 0px;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+.footer a{
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.footer .primary-color{
+  color: rgba(255, 255, 255, 0.35);
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.footer:hover p a,
+.footer:hover p .primary-color{
+  color:#f9c56a !important;
 }
