@@ -11,6 +11,11 @@ URI     : http://sogofactory.com
 /* ================================================
    Global Styles
    ================================================ */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* --- LOADER --- */
 .preloder{
@@ -90,6 +95,24 @@ strong{
 .menu-hover {
   color:#f9c56a !important;
 }
+.navbar .navbar-brand{
+  padding: 0px;
+}
+.navbar .navbar-brand img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar .navbar-brand span{
+  color: #ECECEC;
+  text-transform: uppercase;
+  padding: 25px 15px 25px 5px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* ================================================
    Section #1 Video + Logo
@@ -159,7 +182,7 @@ strong{
    Section - Galerie
    ================================================ */
 .gallery{
-    background: #1b1e20 url('../img/Le Sherwood - Piano Bar - Paris - Flou 1.jpg') no-repeat center top;
+    background: #1b1e20 url('../img/Le Sherwood - Piano Bar - Paris - Flou 2.jpg') no-repeat center top;
     background-size: cover;
     padding-bottom: 0;
 }
@@ -191,6 +214,19 @@ strong{
   font-size: 16px;
   font-style: italic;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* ================================================
+   Section - Video
+   ================================================ */
+.videoSection{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 /* ================================================
@@ -240,6 +276,72 @@ strong{
 	margin: 30px 10px 30px 0px;
 }
 
+/* ================================================
+   Section - Testimony
+   ================================================ */
+.trusted .trusted-quote{
+  background: #f4f4f4;
+}
+.trusted-quote .quote-body{
+  color: #4b4741;
+  margin: 20px 0px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.trusted-quote .quote-author{
+  color: #000;
+  margin: 20px 0px;
+  font-size: 18px;
+}
+.trusted .slick-dots li button:before{
+
+}
+.trusted-slider .slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0px 4px;
+  padding: 0px;
+  cursor: pointer;
+}
+.trusted-slider .slick-dots li.slick-active{
+  background-color: transparent;
+}
+.trusted-slider .slick-dots li.slick-active button{
+background-color: transparent;
+border: solid 2px #f9c56a;
+}
+.trusted-slider .slick-dots li button:before{
+font-size: 0;
+}
+.trusted-slider .slick-dots li.slick-active button:before{
+  opacity: 1;
+  background: #f9c56a;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 999;
+  font-size: 0;
+}
+.trusted-slider .slick-dots li button{
+  font-size: 0px;
+  line-height: 0;
+  display: table;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0px none;
+  outline: medium none;
+  background: #e3e3e3;
+  border-radius: 50%;
+}
 /* ================================================
    Section - Contact
    ================================================ */
@@ -358,4 +460,36 @@ iframe {
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 	z-index:10000;
+}
+
+/* ================================================
+   Footer
+   ================================================ */
+.footer .footer-copyrights p{
+  margin: 30px 0px;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+.footer a{
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.footer .primary-color{
+  color: rgba(255, 255, 255, 0.35);
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.footer:hover p a,
+.footer:hover p .primary-color{
+  color:#f9c56a !important;
 }
