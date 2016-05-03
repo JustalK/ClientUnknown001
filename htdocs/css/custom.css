@@ -247,6 +247,8 @@ h3, h1, h2, small {
     background: #1b1e20 url('../img/Le Sherwood - Piano Bar - Paris - Flou 2.jpg') no-repeat center top;
     background-size: cover;
     padding-bottom: 0;
+    background-size: 200%;
+    background-position: 0% 0%;
 }
 .gallery .page-header h3{
     margin-bottom: 30px;
