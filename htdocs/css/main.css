@@ -4426,11 +4426,3 @@ textarea {
     background-attachment: fixed;
     position: relative;
 }
-
-.dark {
-	background: #000000;
-}
-
-small, p, h1, h2, h3, h4, h5, h1 small, h2 small, h3 small, h4 small, h5 small {
-	color: #FFF;
-}
