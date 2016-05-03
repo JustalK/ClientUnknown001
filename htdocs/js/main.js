@@ -98,6 +98,8 @@ $(function() {
             $grid.isotope({
                 filter: filterValue
             });
+            calcul();
+            transition();
         });
     }
     
@@ -643,19 +645,24 @@ $(function() {
 	
 	var anchor = [];
 	var anchorName = [];
-	$(".anchor").each(function() {
-		anchor.push($(this));
-		anchorName.push($(this).attr("href").slice(1));
-	});
-	console.log(anchorName);
 	var anchorPosition = [];
-	$("section").each(function() {
-		for(var i=0;i<anchorName.length;i++) {
-			if($(this).attr("class").indexOf(anchorName[i]) > -1) {
-				anchorPosition.push(parseInt($(this).offset().top));
+	calcul();
+	function calcul() {
+		anchor = [];
+		anchorName = [];
+		anchorPosition = [];
+		$(".anchor").each(function() {
+			anchor.push($(this));
+			anchorName.push($(this).attr("href").slice(1));
+		});
+		$("section").each(function() {
+			for(var i=0;i<anchorName.length;i++) {
+				if($(this).attr("class").indexOf(anchorName[i]) > -1) {
+					anchorPosition.push(parseInt($(this).offset().top));
+				}
 			}
-		}
-	});
+		});
+	}
 	
 	var positionTopScroll=0;
 	$(window).scroll(function(event) {
@@ -665,7 +672,6 @@ $(function() {
 	});
 	
 	function fixscroll() {
-		console.log(positionTopScroll-($(".footer-copyrights").offset().top-$(window).height()));
 		if(positionTopScroll>$(".footer-copyrights").offset().top-$(window).height()) {
 			$(".scroll-up").first().css("display","none");
 			$(".scroll-up-fix").first().css("display","block");
