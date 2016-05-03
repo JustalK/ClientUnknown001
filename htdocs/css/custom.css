@@ -551,3 +551,35 @@ iframe {
 .footer:hover p .primary-color{
   color:#ffc115 !important;
 }
+
+@font-face {
+    font-family: kabel-black;
+    src: url(../fonts/KABEL/Kabel-Black.woff);
+}
+
+@font-face {
+    font-family: kabel-book;
+    src: url(../fonts/KABEL/Kabel-Book.woff);
+}
+
+@font-face {
+    font-family: kabel-heavy;
+    src: url(../fonts/KABEL/Kabel-Heavy.woff);
+}
+
+@font-face {
+    font-family: kabel-regular;
+    src: url(../fonts/KABEL/Kabel-Regular.woff);
+}
+
+*:not(i):not(h1):not(h2):not(h3):not(.anchor) {
+	font-family: kabel-regular !important;
+}
+
+h3, h1, h2, small {
+	font-family: kabel-black !important;
+}
+
+.navbar .navbar-nav > li > a {
+	font-family: kabel-heavy !important;
+}

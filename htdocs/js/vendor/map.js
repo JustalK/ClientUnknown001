@@ -10,8 +10,8 @@
                 var map_lat = mapElement.getAttribute('data-latitude');
                 var map_lon = mapElement.getAttribute('data-longitude');
 
-                var mapOptions = {
-
+                var mapOptions = {	
+                		
                     // How zoomed in you want the map to start at (always required)
                     zoom: 15,
                     scrollwheel: false,
@@ -122,9 +122,11 @@
                 var map = new google.maps.Map(mapElement, mapOptions);
 
                 // Let's also add a marker while we're at it
+                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(48.870111, 2.332198),
                     map: map,
+                    icon: iconBase + 'schools_maps.png',
                     title: 'Le Sherwood - Piano Bar'
                 });
             }
