@@ -616,12 +616,13 @@ $(function() {
 
     $(window).scroll(function() {
         var value = $(this).scrollTop();
-        if (value > 350)
-            $(".navbar-fixed-top").css("background", "rgba(0, 0, 0, 0.9)");
-
-        else
-            $(".navbar-fixed-top").css("background", "rgba(0, 0, 0, 0.3)");
-
+        if (value > 350) {
+    		$(".navbar-fixed-top").addClass("navbar-fixed-top-dark");
+        	$(".navbar-fixed-top").removeClass("navbar-fixed-top-light");
+        } else {
+        	$(".navbar-fixed-top").addClass("navbar-fixed-top-light");
+        	$(".navbar-fixed-top").removeClass("navbar-fixed-top-dark");
+        }
     });
     
     
