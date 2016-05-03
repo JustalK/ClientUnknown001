@@ -516,7 +516,7 @@ iframe {
     src: url(../fonts/KABEL/Kabel-Regular.woff);
 }
 
-*:not(i):not(small):not(h1):not(h2):not(h3):not(.anchor) {
+*:not(i):not(h1):not(h2):not(h3):not(.anchor) {
 	font-family: kabel-regular !important;
 }
 
