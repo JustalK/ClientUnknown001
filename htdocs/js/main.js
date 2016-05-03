@@ -674,10 +674,10 @@ $(function() {
 	});
 	
 	var count=0;
-	var fixparallax = 1000;
+	var fixparallax1 = 1000;
 	function parallax() {
-		if(positionTopScroll>fixparallax) {
-			var cal = (positionTopScroll/fixparallax)*20;
+		if(positionTopScroll>anchorPosition[0]) {
+			var cal = (positionTopScroll/fixparallax1)*10;
 			$("#parallax").first().css("background-position","0% "+cal+"%");
 			count++;
 		}
