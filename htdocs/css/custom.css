@@ -16,9 +16,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-p{
-  color: #fff;
-}
 
 /* --- LOADER --- */
 .preloder{
@@ -66,24 +63,64 @@ p{
 }
 
 /* --- FONTS --- */
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+/* -------- */
+/* kevin - pour désactiver les styles bootstrap */
+:not(i):not(h1):not(h2):not(h3):not(.anchor) {
+  font-family: kabel-regular;
+  font-weight: initial;
+}
+/* -------- */
+
+@font-face {
+    font-family: kabel-black;
+    src: url(../fonts/KABEL/Kabel-Black.woff);
+}
+@font-face {
+    font-family: kabel-book;
+    src: url(../fonts/KABEL/Kabel-Book.woff);
+}
+@font-face {
+    font-family: kabel-heavy;
+    src: url(../fonts/KABEL/Kabel-Heavy.woff);
+}
+@font-face {
+    font-family: kabel-regular;
+    src: url(../fonts/KABEL/Kabel-Regular.woff);
+}
 
 body{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: kabel-regular;
     -webkit-font-smoothing: antialiased;
 }
 .menu .food-menu .menu-item .price,
 .menu .food-menu .menu-item3 .price{
-    font-family: "Raleway", sans-serif;
+    font-family: kabel-regular;
 }
 p{
     font-size: 17px;
+    font-family: kabel-regular;
+    color: #fff;
 }
 strong{
-	font-weight: 700;
+  font-weight: initial;
+  font-family: kabel-black !important;
 }
 .small, small{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: kabel-regular;
+}
+h3, h1, h2, small {
+  font-family: kabel-black !important;
+}
+.navbar .navbar-nav > li > a {
+  font-family: kabel-black !important;
+  font-weight: initial;
+  font-size: 15px;
+}
+.navbar-fixed-top-light {
+  background: rgba(0, 0, 0, 0.3);
+}
+.navbar-fixed-top-dark {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* MARGIN */
@@ -132,7 +169,7 @@ strong{
   padding: 25px 15px 25px 5px;
   font-weight: 700;
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: kabel-regular;
   transition: all 0.5s ease;
   display: inline-block;
   vertical-align: middle;
@@ -232,15 +269,19 @@ strong{
 /* ================================================
    Section - La Carte
    ================================================ */
+.menu-tags span{
+    font-family: kabel-regular;
+    font-weight: initial;
+}
 .menu .food-menu .menu-item h4{
   font-size: 17px;
   text-transform: none;
-  font-family: 'Roboto Condensed', sans-serif;
+    font-family: kabel-regular;
 }
 .menu .food-menu .menu-item p{
   font-size: 16px;
   font-style: italic;
-  font-family: 'Roboto Condensed', sans-serif;
+    font-family: kabel-regular;
 }
 .menu .food-menu .menu-item h4,
 .menu .food-menu .menu-item3 h4,
@@ -339,7 +380,7 @@ strong{
   margin: 20px 0px;
   font-size: 24px;
   font-weight: 300;
-  font-family: 'Roboto Condensed', sans-serif;
+    font-family: kabel-regular;
 }
 .trusted-quote .quote-author{
   color: #fff;
@@ -528,9 +569,9 @@ iframe {
 .footer .footer-copyrights p{
   margin: 30px 0px;
   color: rgba(255, 255, 255, 0.25);
-  font-size: 13px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
+  font-size: 15px;
+  font-family: kabel-black;
+  font-weight: initial;
 }
 .footer a{
   color: rgba(255, 255, 255, 0.35);
@@ -552,44 +593,4 @@ iframe {
 .footer:hover p a,
 .footer:hover p .primary-color{
   color:#ffc115 !important;
-}
-
-@font-face {
-    font-family: kabel-black;
-    src: url(../fonts/KABEL/Kabel-Black.woff);
-}
-
-@font-face {
-    font-family: kabel-book;
-    src: url(../fonts/KABEL/Kabel-Book.woff);
-}
-
-@font-face {
-    font-family: kabel-heavy;
-    src: url(../fonts/KABEL/Kabel-Heavy.woff);
-}
-
-@font-face {
-    font-family: kabel-regular;
-    src: url(../fonts/KABEL/Kabel-Regular.woff);
-}
-
-*:not(i):not(h1):not(h2):not(h3):not(.anchor) {
-	font-family: kabel-regular !important;
-}
-
-h3, h1, h2, small {
-	font-family: kabel-black !important;
-}
-
-.navbar .navbar-nav > li > a {
-	font-family: kabel-heavy !important;
-}
-
-.navbar-fixed-top-light {
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.navbar-fixed-top-dark {
-	background: rgba(0, 0, 0, 0.9);
 }
