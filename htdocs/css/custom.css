@@ -291,7 +291,7 @@ h3, h1, h2 {
 }
 .menu .food-menu .menu-item .price,
 .menu .food-menu .menu-item3 .price{
-  color: #fff;
+  color: #ffc115;
 }
 .menu .food-menu .menu-item,
 .menu .food-menu .menu-item3{
@@ -461,10 +461,10 @@ font-size: 0;
     transition: all 0.1s ease-in-out;
 }
 .contact-social a:hover{
-	color: #000;
-  background-color: #fff;
+	color: #fff;
+	background-color: #fff;
 }
-/*.contact-social .facebook{
+.contact-social .facebook{
 	background-color:#3b5998;
 	border: 1px solid #3b5998;
 
@@ -502,7 +502,7 @@ font-size: 0;
 .contact-social .instagram:hover{
 	background-color: #2d516f;
 	border: 1px solid #fff;
-}*/
+}
 iframe {
     box-sizing: border-box;
     height: 56.25vw;
