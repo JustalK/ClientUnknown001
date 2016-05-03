@@ -674,11 +674,15 @@ $(function() {
 	});
 	
 	var count=0;
-	var fixparallax1 = 1000;
 	function parallax() {
 		if(positionTopScroll>anchorPosition[0]) {
-			var cal = (positionTopScroll/fixparallax1)*10;
+			var cal = (positionTopScroll/anchorPosition[0])*15;
 			$("#parallax").first().css("background-position","0% "+cal+"%");
+			count++;
+		}
+		if(positionTopScroll>anchorPosition[3]) {
+			var cal = (positionTopScroll/anchorPosition[3])*15;
+			$("#temoignages-bg").first().css("background-position","0% "+cal+"%");
 			count++;
 		}
 	}
