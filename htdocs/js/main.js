@@ -673,17 +673,14 @@ $(function() {
 		fixscroll();
 	});
 	
-	var count=0;
 	function parallax() {
 		if(positionTopScroll>anchorPosition[0]) {
-			var cal = (positionTopScroll/anchorPosition[0])*15;
-			$("#parallax").first().css("background-position","0% "+cal+"%");
-			count++;
+			var cal = (positionTopScroll/anchorPosition[0])*7;
+			$("#parallax").css("background-position","0% "+cal+"%");
 		}
-		if(positionTopScroll>anchorPosition[3]) {
-			var cal = (positionTopScroll/anchorPosition[3])*15;
-			$("#temoignages-bg").first().css("background-position","0% "+cal+"%");
-			count++;
+		if(positionTopScroll>anchorPosition[2]) {
+			var cal = (positionTopScroll/anchorPosition[2])*45;
+			$("#temoignages-bg").css("background-position","0% "+cal+"%");
 		}
 	}
 	

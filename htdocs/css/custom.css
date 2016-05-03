@@ -215,6 +215,7 @@ h3, h1, h2 {
 .home .scroll-down{
     bottom: 0;
 }
+
 .scroll-down a{
     background-color: rgba(0, 0, 0, 0.298039);
     width: 120px;
@@ -594,4 +595,9 @@ iframe {
 .footer:hover p a,
 .footer:hover p .primary-color{
   color:#ffc115 !important;
+}
+
+#temoignages-bg {
+	background-size: 120%;
+	background-position: 0% 0%;
 }
