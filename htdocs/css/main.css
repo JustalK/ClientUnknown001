@@ -955,7 +955,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .special-slider .slider-content {
-    width: 65%;
+    width: 100%;
     float: left;
     padding: 0px 30px;
 }
