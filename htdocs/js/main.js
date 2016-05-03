@@ -669,8 +669,19 @@ $(function() {
 	$(window).scroll(function(event) {
 		positionTopScroll = parseInt($(window).scrollTop());
 		transition();
+		parallax();
 		fixscroll();
 	});
+	
+	var count=0;
+	var fixparallax = 1000;
+	function parallax() {
+		if(positionTopScroll>fixparallax) {
+			var cal = (positionTopScroll/fixparallax)*20;
+			$("#parallax").first().css("background-position","0% "+cal+"%");
+			count++;
+		}
+	}
 	
 	function fixscroll() {
 		if(positionTopScroll>$(".footer-copyrights").offset().top-$(window).height()) {
