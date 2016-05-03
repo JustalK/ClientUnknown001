@@ -637,6 +637,10 @@ $(function() {
 	    });
 	});
 	
+    $grid.isotope({
+        filter: $(".tagsort-active").first().attr("data-filter")
+    });
+	
 	var anchor = [];
 	var anchorName = [];
 	$(".anchor").each(function() {
@@ -727,8 +731,4 @@ $(function() {
 			}
 		}		
 	}
-	
-    $grid.isotope({
-        filter: $(".tagsort-active").first().attr("data-filter")
-    });
 }); /* End Strict Function */
