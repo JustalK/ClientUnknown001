@@ -601,3 +601,7 @@ iframe {
 	background-size: 120%;
 	background-position: 0% 0%;
 }
+
+#formulaire {
+	padding: 180px 0;
+}
