@@ -775,4 +775,5 @@ $(function() {
 			}
 		}		
 	}
+	
 }); /* End Strict Function */

@@ -618,3 +618,6 @@ iframe {
 	height: 100%!important;
 } 
 
+.centerAdvisor {
+	display: inline-block;
+}
